@@ -13,27 +13,27 @@ if [[ $? -eq 0 ]]; then
 
         if dde="$(type -p "$control")" || ! [ -z "$dde" ]; 
         then
-  			echo -e "Deepin file manager installed.\n\n[Wait] Uninstalling...\n";
-  			echo -e "[!] If required, enter the password to proceed with uninstallation\nWait..."
+  		echo -e "Deepin file manager installed.\n\n[Wait] Uninstalling...\n";
+  		echo -e "[!] If required, enter the password to proceed with uninstallation\nWait..."
   			
-  			sudo apt-get --assume-yes --purge remove $control > /dev/null
+  		sudo apt-get --assume-yes --purge remove $control > /dev/null
 
-  			echo -e "Deepin file manager uninstalled!\n\n"
-  		else
-			echo -e "Deepin file manager not installed.\n\n";
-		fi
+  		echo -e "Deepin file manager uninstalled!\n\n"
+  	else
+		echo -e "Deepin file manager not installed.\n\n";
+	fi
 
-		echo "[Check] Nautilus file manager..."
-  		control="nautilus"	
+	echo "[Check] Nautilus file manager..."
+  	control="nautilus"	
 
-  		if dde="$(type -p "$control")" || ! [ -z "$dde" ]; 
-        then
+  	if dde="$(type -p "$control")" || ! [ -z "$dde" ]; 
+      	then
         	echo "Nautilus is already installed"
-  		else
-  			echo -e "Proceed to install Nautilus file manager\n"
-  			echo -e "[!] If required, enter the password to proceed with installation\nWait..."
-  			sudo apt-get --assume-yes install nautilus > /dev/null
-  		fi
+  	else
+  		echo -e "Proceed to install Nautilus file manager\n"
+  		echo -e "[!] If required, enter the password to proceed with installation\nWait..."
+  		sudo apt-get --assume-yes install nautilus > /dev/null
+  	fi
   		
   		echo -e "\n\nScript finished...\n"
 else
