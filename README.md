@@ -1,21 +1,9 @@
 # Deepin OS - Replace default file manager with Nautilus
 
-## Topics covered
+## About
+Simple script to replace Deepin's default file manager with the latest version of Nautilus.
 
-1. What is it for?
-2. How to
-___
-
-## Authors
-
-:it: : Simone Margio
-
-
-
-# What is it for?
-Simple script to replace Deepin's default file manager with the latest version of Nautilus
-
-# How to
+## How to
 
 1. Download the script
 2. Open the terminal
